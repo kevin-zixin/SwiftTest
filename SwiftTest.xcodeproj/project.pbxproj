@@ -14,6 +14,7 @@
 		849F3D5F1CE09CD80019745A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849F3D5D1CE09CD80019745A /* LaunchScreen.storyboard */; };
 		849F3D6A1CE09CD80019745A /* SwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F3D691CE09CD80019745A /* SwiftTestTests.swift */; };
 		849F3D751CE09CD80019745A /* SwiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F3D741CE09CD80019745A /* SwiftTestUITests.swift */; };
+		849F3D831CE09D7F0019745A /* VendingMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849F3D821CE09D7F0019745A /* VendingMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		849F3D701CE09CD80019745A /* SwiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849F3D741CE09CD80019745A /* SwiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestUITests.swift; sourceTree = "<group>"; };
 		849F3D761CE09CD80019745A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849F3D821CE09D7F0019745A /* VendingMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendingMachine.swift; sourceTree = "<group>"; };
+		849F3D841CE188640019745A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 			children = (
 				849F3D541CE09CD80019745A /* AppDelegate.swift */,
 				849F3D561CE09CD80019745A /* ViewController.swift */,
+				849F3D821CE09D7F0019745A /* VendingMachine.swift */,
+				849F3D841CE188640019745A /* MyPlayground.playground */,
 				849F3D581CE09CD80019745A /* Main.storyboard */,
 				849F3D5B1CE09CD80019745A /* Assets.xcassets */,
 				849F3D5D1CE09CD80019745A /* LaunchScreen.storyboard */,
@@ -258,6 +263,7 @@
 			files = (
 				849F3D571CE09CD80019745A /* ViewController.swift in Sources */,
 				849F3D551CE09CD80019745A /* AppDelegate.swift in Sources */,
+				849F3D831CE09D7F0019745A /* VendingMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +490,7 @@
 				849F3D7B1CE09CD80019745A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849F3D7C1CE09CD80019745A /* Build configuration list for PBXNativeTarget "SwiftTestTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +499,7 @@
 				849F3D7E1CE09CD80019745A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849F3D7F1CE09CD80019745A /* Build configuration list for PBXNativeTarget "SwiftTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +508,7 @@
 				849F3D811CE09CD80019745A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
