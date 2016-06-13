@@ -8,7 +8,8 @@
 
 import UIKit
 import CoreMotion
-class ViewController: UIViewController {
+import ContactsUI
+class ViewController: UIViewController,CNContactPickerDelegate {
     
     var manager = CMMotionManager()
     var activityManager = CMMotionActivityManager()
@@ -23,7 +24,24 @@ class ViewController: UIViewController {
         self.view.addSubview(mylabel)
         // Do any additional setup after loading the view, typically from a nib.
         testStep()
+        
+        let testButton = UIButton()
+        testButton.frame = CGRectMake(100, 400, 100, 40)
+        testButton.backgroundColor = UIColor.redColor()
+        testButton.addTarget(self, action: #selector(ViewController.testButtonClicked), forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(testButton)
     }
+    
+    func testButtonClicked(){
+        let pickerVC = CNContactPickerViewController()
+        pickerVC.delegate = self
+        pickerVC.displayedPropertyKeys = [CNContactPhoneNumbersKey]
+        self.presentViewController(pickerVC, animated: true) { 
+            //
+        }
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -118,6 +136,14 @@ class ViewController: UIViewController {
         
     }
 
-
+    func contactPicker(picker: CNContactPickerViewController, didSelectContact contact: CNContact) {
+        //
+    }
+    
+    func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
+        //
+    }
+    
+    
 }
 

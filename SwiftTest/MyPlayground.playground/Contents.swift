@@ -223,4 +223,98 @@ let goToZero = chooseStepFunction2(currentValue>0)
 
 goToZero(currentValue)
 
+let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+
+func backwards(s1:String,_s2:String) -> Bool {
+   return s1>_s2
+}
+
+
+names.sort(backwards)
+
+names.sort(<)
+
+let digitNames = [
+    0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",
+    5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+]
+let numbers = [16, 58, 510]
+
+let strings = numbers.map { (number) -> String in
+    var output = ""
+    var number = number
+    while number>0{
+        output = digitNames[number%10]! + output
+        number /= 10
+    }
+    
+    return output
+}
+
+
+
+enum CompassPoint {
+    case North
+    case South
+    case East
+    case West
+}
+
+
+enum ControlCharacter : Character {
+    case Tab = "\t"
+}
+
+
+
+
+
+
+//////////////
+class Vehicle {
+var currentSpeed = 0.0
+var description: String {
+    return "traveling at \(currentSpeed) miles per hour"
+}
+func makeNoise() {
+    // do nothing - an arbitrary vehicle doesn't necessarily make a noise
+}
+}
+
+
+
+let someVehicle = Vehicle()
+
+print(someVehicle.description)
+
+
+someVehicle.currentSpeed = 100.8
+print(someVehicle.description)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
