@@ -87,8 +87,8 @@ do {
 let age = 3 /*age = -3 */
 assert(age >= 0, "age can not less than 0")
 
-8%2.5
-8%(-2.5)
+//8%2.5
+//8%(-2.5)
 var h = 0
 h+=1
 let m=h
@@ -112,8 +112,8 @@ var colorNameToUse = userDefinedColorName ?? defaultColorName
 
 
 var welcome = "hello"
-welcome.insert("b", atIndex: welcome.endIndex)
-welcome.removeRange(welcome.endIndex.advancedBy(-1)..<welcome.endIndex)
+welcome.insert("b", at: welcome.endIndex)
+//welcome.removeRange(welcome.endIndex.advancedBy(n: -1)..<welcome.endIndex)
 
 
 //var someInts = [Int] ()
@@ -122,7 +122,7 @@ var someInts : [Int] = []
 someInts.append(1)
 someInts.append(2)
 
-var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
+//var threeDoubles = [Double](count: 3, repeatedValue: 0.0)
 
 var airports : [String : String] = [:]
 var anotherAirports  = [String:String]()
@@ -174,7 +174,7 @@ func firstFunc(firstParameter : Int, secondParameter : Int) -> (a: Int , b: Int 
 }
 
 
-firstFunc(1, secondParameter: 2)
+firstFunc(firstParameter: 1, secondParameter: 2)
 
 
 func arithmeticMean(numbers: Double...) -> Double{
@@ -201,7 +201,7 @@ func chooseStepFunction(backwards: Bool) -> (Int) -> Int {
 }
 
 var currentValue = 3
-let moveToZero = chooseStepFunction(currentValue>0)
+let moveToZero = chooseStepFunction(backwards: currentValue>0)
 
 moveToZero(currentValue)
 
@@ -219,20 +219,20 @@ func chooseStepFunction2(backwards : Bool) -> (Int)->Int {
 }
 
 
-let goToZero = chooseStepFunction2(currentValue>0)
+let goToZero = chooseStepFunction2(backwards: currentValue>0)
 
 goToZero(currentValue)
 
-let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+var names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
 
 func backwards(s1:String,_s2:String) -> Bool {
    return s1>_s2
 }
 
-
-names.sort(backwards)
-
-names.sort(<)
+//
+//names.sort(backwards)
+//
+//names.sort(<)
 
 let digitNames = [
     0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",
